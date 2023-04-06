@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+ 
+:root {
+  --band-color: #303A52;
+  --text-color: #E7F6F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #101318;
+  color: #EEEEEE;
+}
+
+.bar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--band-color);
+  position: fixed;
+  top: 0;
+}
+
+#navbar {
+  max-width: 600px;
+  height: 50px;
+  margin-left: auto;
+}
+
+#navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.7rem;
+}
+
+#navbar ul li {
+  margin-right: 20px;
+}
+
+#navbar ul a, .card-btn a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+#navbar ul a:hover {
+  border-bottom: 2px solid var(--text-color);
+  padding-bottom: 3px;
+}
+
+.cover {
+  height: 50vh;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./img/cover-img.jpg");
+  color: var(--text-color);
+}
+
+.cover-title {
+  padding-top: 22vh;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+.cover p {
+  font-size: 1.8rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.cover-btn {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100px;
+  height: 35px;
+  margin: 35px 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.cover-btn:active {
+  box-shadow: inset 3px 3px 10px -5px #012a6a;
+}
+
+.cover a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  width: 100%;
+}
+
+.fa-brands, .far, .fas {
+  margin-right: 2px;
+}
+
+#about, #projects {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 60px 50px 0;
+  font-size: 1.7rem;
+}
+
+#about > h2, #projects > h2 {
+  color: var(--text-color);
+}
+
+.about p {
+  margin-top: 10px;
+}
+
+.about a {
+  color: #98d45f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-container-skill {
+  margin-top: 15px;
+}
+
+.skill-text {
+  text-decoration: underline;
+}
+
+.skill-text-icon {
+  display: inline-block;
+}
+
+#projects {
+  text-align: right;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 100px;
+}
+
+#projects h2 {
+  padding-right: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#projects .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #4ECCA3;
+  color: #232931;
+  padding: 7px;
+  border-radius: 3px;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+#projects .card-title {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#projects .card-text {
+  margin: 15px 0 15px;
+  text-align: justify;
+}
+
+#projects .card-btn-container {
+  margin-top: auto;
+  text-align: center;
+}
+
+#projects .card-btn-container > p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  height: 40px;
+  text-align: left;
+}
+
+#projects .card-btn {    
+  background-color: var(--band-color);
+  color: var(--text-color);
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  width: 40%;
+  cursor: pointer;
+}
+
+#projects img {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 5px;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* FOOTER */
+footer {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--band-color);
+}
+
+footer p {
+  text-align: center;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .bar {
+    height: 40px;
+  }
+  
+  #navbar {
+    height: 40px;
+  }
+
+  .cover {
+    height: 35vh;
+  }
+  
+  .cover-title {
+    padding-top: 15vh;
+    font-size: 2.5rem;
+  }
+  
+  .cover p {
+    font-size: 1.4rem;
+  }
+
+  .cover-btn {
+    font-size: 1.3rem;
+    width: 80px;
+    height: 30px;
+    margin-right: 0px;
+    padding: 0;
+  }
+
+  #about {
+    padding: 40px 30px 0;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-text-icon {
+    display: block;
+    margin-block: 3px;
+  }
+
+  #about > p {
+    text-align: justify;
+  }
+
+  #projects .card {
+    width: 85%;
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    font-size: 1.6rem;
+  }
+
+  footer {
+    font-size: 1.1rem;
+    height: 20px;
+  }
+  
+  footer p {
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 655px) {
+  #projects .card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
