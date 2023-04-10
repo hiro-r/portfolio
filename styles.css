@@ -287,6 +287,10 @@ footer p {
     align-items: center;
   }
 
+  .about-container-skill p {
+    margin-bottom: 20px;
+  }
+
   .skill-text-icon {
     display: block;
     margin-block: 3px;
