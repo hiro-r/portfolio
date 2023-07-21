@@ -342,6 +342,7 @@ footer p {
     /* normal menu direction */
     display: flex;
     flex-direction: row;
+    justify-content: end;
     position: fixed;
     top: 0;
     right: 0;
@@ -354,6 +355,7 @@ footer p {
   }
 
   .menu-list {
+    width: 100px;
     height: 100%;
   }
 
